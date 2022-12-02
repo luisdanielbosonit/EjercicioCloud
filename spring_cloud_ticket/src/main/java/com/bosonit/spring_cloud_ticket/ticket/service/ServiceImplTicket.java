@@ -2,27 +2,28 @@ package com.bosonit.spring_cloud_ticket.ticket.service;
 
 import com.bosonit.spring_cloud_ticket.Exception.EntityNotFoundException;
 import com.bosonit.spring_cloud_ticket.Exception.UnprocessableEntityException;
+import com.bosonit.spring_cloud_ticket.cliente.ClienteFeignTicket;
 import com.bosonit.spring_cloud_ticket.ticket.entity.Ticket;
 import com.bosonit.spring_cloud_ticket.ticket.infrastructure.dtos.TicketINputDto;
 import com.bosonit.spring_cloud_ticket.ticket.infrastructure.dtos.TicketOUTputDto;
 import com.bosonit.spring_cloud_ticket.ticket.infrastructure.repository.TicketRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.Date;
-
 import java.util.List;
 import java.util.Optional;
-import java.util.stream.Collectors;
 
 @Service
 public class ServiceImplTicket implements ServiceTicket {
 
     @Autowired
     private TicketRepository ticketRepository ;
+
+    @Autowired
+    ClienteFeignTicket clienteFeignTicket;
 
 
 
@@ -85,10 +86,17 @@ public class ServiceImplTicket implements ServiceTicket {
     }
 
     @Override
-    public TicketOUTputDto loadTicket(TicketINputDto ticketINputDto){
+    public Object loadTicket(Integer id){
+        return clienteFeignTicket.findByIdCliente(id);  //prueba para comprobar que funciones el feign
+
+    }
+
+    @Override
+    public TicketOUTputDto addTicket(TicketINputDto ticketINputDto) throws Exception {
         Ticket ticket= ticketINputDto.transformIntoTicket();
         ticketRepository.save(ticket);
         return new TicketOUTputDto(ticket);
     }
+
 
 }

@@ -1,6 +1,7 @@
 package com.bosonit.spring_cloud_ticket.ticket.infrastructure.dtos;
 
 import com.bosonit.spring_cloud_ticket.ticket.entity.Ticket;
+import lombok.AllArgsConstructor;
 import lombok.Data;
 
 /**

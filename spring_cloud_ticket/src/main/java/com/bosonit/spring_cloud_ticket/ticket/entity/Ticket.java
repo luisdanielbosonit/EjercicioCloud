@@ -4,7 +4,6 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.persistence.*;
 @Setter
@@ -13,7 +12,6 @@ import javax.persistence.*;
 @NoArgsConstructor
 @Entity
 @Table(name= "ticket")
-@RequestMapping("add")
 public class Ticket {
 
     private static final String fechtype = null;

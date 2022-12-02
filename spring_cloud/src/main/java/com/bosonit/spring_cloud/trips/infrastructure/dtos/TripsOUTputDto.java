@@ -1,9 +1,11 @@
 package com.bosonit.spring_cloud.trips.infrastructure.dtos;
 
 import com.bosonit.spring_cloud.cliente.entity.Cliente;
+import com.bosonit.spring_cloud.cliente.infrastructure.dtos.ClienteOUTputDto;
 import com.bosonit.spring_cloud.trips.entity.Trips;
 import lombok.Data;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -17,7 +19,7 @@ public class TripsOUTputDto {
     private String destination;
     private String departureDate;
     private String arrivalDate;
-    List<Cliente> passenger;
+    List<ClienteOUTputDto> passenger= new ArrayList<>();
     private String status;
 
 
@@ -27,7 +29,7 @@ public class TripsOUTputDto {
         this.destination = trips.getDestination();
         this.departureDate = trips.getDepartureDate();
         this.arrivalDate = trips.getArrivalDate();
-        this.passenger = trips.getPassenger();
+        this.passenger=trips.getPassenger().stream().map(ClienteOUTputDto::new).toList();
         this.status = trips.getStatus();
     }
 }

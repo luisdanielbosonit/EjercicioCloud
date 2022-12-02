@@ -17,36 +17,33 @@ public class TripsINputDto {
     private String destination;
     private String departureDate;
     private String arrivalDate;
-    List<Cliente> passenger;
+//    List<Cliente> passenger;
     private String status;
 
 
     public Trips transformIntoTrips() {
         Trips trips = new Trips();
-        trips.setId_trips(this.id_trips);
         trips.setOrigin(this.origin);
         trips.setDestination(this.destination);
         trips.setDepartureDate(this.departureDate);
         trips.setArrivalDate(this.arrivalDate);
-        trips.setPassenger(this.passenger);
+//        trips.setPassenger(this.passenger);
         trips.setStatus(this.status);
 
         return trips;
     }
 
-    public TripsINputDto(Integer id_trips,
-                         String origin,
+    public TripsINputDto(String origin,
                          String destination,
                          String departureDate,
                          String arrivalDate,
-                         List<Cliente> passenger,
+//                         List<Cliente> passenger,
                          String status) {
-        this.id_trips = id_trips;
         this.origin = origin;
         this.destination = destination;
         this.departureDate = departureDate;
         this.arrivalDate = arrivalDate;
-        this.passenger = passenger;
+//        this.passenger = passenger;
         this.status = status;
     }
 }

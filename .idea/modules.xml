@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/EjercicioCloud.iml" filepath="$PROJECT_DIR$/EjercicioCloud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/EjercicioCloud.iml" filepath="$PROJECT_DIR$/.idea/EjercicioCloud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka/eureka.iml" filepath="$PROJECT_DIR$/eureka/eureka.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_cloud/spring_cloud.iml" filepath="$PROJECT_DIR$/spring_cloud/spring_cloud.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_cloud_ticket/spring_cloud_ticket.iml" filepath="$PROJECT_DIR$/spring_cloud_ticket/spring_cloud_ticket.iml" />
     </modules>

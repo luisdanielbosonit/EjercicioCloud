@@ -20,4 +20,8 @@ public interface ServiceTrips {
 
     public TripsOUTputDto loadTrips(TripsINputDto tripsINputDto)throws Exception; //ok
 
+    Integer countPassengers(Integer trip_id);
+    TripsOUTputDto addPassenger(Integer trip_id, Integer client_id);
+    TripsOUTputDto changeStatus(Integer trip_id,String status);
+
 }

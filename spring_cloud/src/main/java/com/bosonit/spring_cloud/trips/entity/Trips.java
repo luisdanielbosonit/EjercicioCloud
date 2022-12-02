@@ -1,6 +1,7 @@
 package com.bosonit.spring_cloud.trips.entity;
 
 import com.bosonit.spring_cloud.cliente.entity.Cliente;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -27,22 +28,20 @@ public class Trips {
     @Column(name="id_viajes")
     private Integer id_trips;
 
-    @Column(nullable = false)
     private String origin;
-
-    @Column(nullable = false)
     private String destination;
-
-    @Column(nullable = false)
     private String departureDate;
-
-    @Column(nullable = false)
     private String arrivalDate;
-
-    @OneToMany(mappedBy = "trips")
+    @JoinTable(
+            name = "rel_client_trip",
+            joinColumns = @JoinColumn(name = "id_trip", nullable = false),
+            inverseJoinColumns = @JoinColumn(name="id_client", nullable = false),
+            uniqueConstraints = @UniqueConstraint(columnNames={"id_trip", "id_client"})
+    )
+    @ManyToMany(fetch = FetchType.LAZY)
+    @JoinColumn(name="client_id")
+    @JsonManagedReference
     List<Cliente> passenger= new ArrayList<>();
-
-    @Column(nullable = false)
     private String status;
 
 }

@@ -1,6 +1,7 @@
 package com.bosonit.spring_cloud_ticket.ticket.service;
 
 
+
 import com.bosonit.spring_cloud_ticket.ticket.infrastructure.dtos.TicketINputDto;
 import com.bosonit.spring_cloud_ticket.ticket.infrastructure.dtos.TicketOUTputDto;
 import org.springframework.stereotype.Component;
@@ -19,6 +20,8 @@ public interface ServiceTicket {
 
     public List<TicketOUTputDto> viewallTicket();
 
-    public TicketOUTputDto loadTicket(TicketINputDto ticketINputDto)throws Exception; //ok
+    public Object loadTicket(Integer id)throws Exception; //ok
+
+    public TicketOUTputDto addTicket(TicketINputDto ticketINputDto)throws Exception; //ok
 
 }

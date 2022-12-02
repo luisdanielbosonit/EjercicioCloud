@@ -1,10 +1,12 @@
 package com.bosonit.spring_cloud_ticket.ticket.infrastructure.controller;
 
 
+import com.bosonit.spring_cloud_ticket.cliente.ClienteOUTputDto;
 import com.bosonit.spring_cloud_ticket.ticket.infrastructure.dtos.TicketINputDto;
 import com.bosonit.spring_cloud_ticket.ticket.infrastructure.dtos.TicketOUTputDto;
 import com.bosonit.spring_cloud_ticket.ticket.service.ServiceTicket;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -18,10 +20,21 @@ public class TicketController {
     ServiceTicket serviceTicket;
 
 
-    @PostMapping("/addticket")
-    public TicketOUTputDto guardarticket(@RequestBody TicketINputDto ticketINputDto) throws Exception {
-        return serviceTicket.loadTicket(ticketINputDto);
+    @PostMapping("/addticket/{id_cliente}/{id_trips}")
+    public Object guardarticket(@PathVariable Integer id_cliente, @PathVariable Integer id_trips) throws Exception {
+        return serviceTicket.loadTicket(id_cliente);
     }
+
+//    @PostMapping("addticket/{id_cliente}/{id_trips}")
+//    public ResponseEntity<ClienteOUTputDto> saveCliente(@PathVariable Integer id_cliente, @RequestBody ClienteOUTputDto clienteOUTputDto ){
+//        ClienteOUTputDto clienteOUTputDto1= null;
+//        try {
+//            clienteOUTputDto1 = serviceTicket.loadTicket(id_cliente,clienteOUTputDto);
+//        } catch (Exception e) {
+//            throw new RuntimeException(e);
+//        }
+//        return ResponseEntity.ok(clienteOUTputDto1);
+//    }
 
     @GetMapping("get/{id}")
     public TicketOUTputDto show(@PathVariable Integer id) throws Exception {
@@ -44,6 +57,10 @@ public class TicketController {
         return (List<TicketOUTputDto>) serviceTicket.viewallTicket();
     }
 
-
+    @GetMapping("cliente/get/{id}")
+    public ResponseEntity<ClienteOUTputDto> getClieById(@PathVariable Integer id) throws Exception {
+        ClienteOUTputDto clienteOUTputDto= (ClienteOUTputDto) serviceTicket.loadTicket(id);
+        return ResponseEntity.ok(clienteOUTputDto);
+    }
 }
 

@@ -2,6 +2,8 @@ package com.bosonit.spring_cloud.trips.service;
 
 import com.bosonit.spring_cloud.Exception.EntityNotFoundException;
 import com.bosonit.spring_cloud.Exception.UnprocessableEntityException;
+import com.bosonit.spring_cloud.cliente.entity.Cliente;
+import com.bosonit.spring_cloud.cliente.infrastructure.repository.ClienteRepository;
 import com.bosonit.spring_cloud.trips.entity.Trips;
 import com.bosonit.spring_cloud.trips.infrastructure.dtos.TripsINputDto;
 import com.bosonit.spring_cloud.trips.infrastructure.dtos.TripsOUTputDto;
@@ -23,6 +25,9 @@ public class ServiceImplTrips implements ServiceTrips {
 
     @Autowired
     private TripsRepository tripsRepository;
+
+    @Autowired
+    private ClienteRepository clienteRepository;
 
 
 
@@ -49,8 +54,8 @@ public class ServiceImplTrips implements ServiceTrips {
             throw new UnprocessableEntityException("date is not null", HttpStatus.UNPROCESSABLE_ENTITY,new Date());
         if(tripsINputDto.getArrivalDate() == null)
             throw new UnprocessableEntityException("Arrival can not be null", HttpStatus.UNPROCESSABLE_ENTITY,new Date());
-        if(tripsINputDto.getPassenger() == null)
-            throw new UnprocessableEntityException("Passengeer can not be null",HttpStatus.UNPROCESSABLE_ENTITY,new Date());
+//        if(tripsINputDto.getPassenger() == null)
+//            throw new UnprocessableEntityException("Passengeer can not be null",HttpStatus.UNPROCESSABLE_ENTITY,new Date());
         if(tripsINputDto.getStatus() == null)
             throw new UnprocessableEntityException("Status can not be null",HttpStatus.UNPROCESSABLE_ENTITY,new Date());
 
@@ -60,7 +65,7 @@ public class ServiceImplTrips implements ServiceTrips {
         trips.setDestination(tripsINputDto.getDestination());
         trips.setDepartureDate(tripsINputDto.getDepartureDate());
         trips.setArrivalDate(tripsINputDto.getArrivalDate());
-        trips.setPassenger(tripsINputDto.getPassenger());
+//        trips.setPassenger(tripsINputDto.getPassenger());
         trips.setStatus(tripsINputDto.getStatus());
 
         tripsRepository.save(trips);
@@ -87,6 +92,36 @@ public class ServiceImplTrips implements ServiceTrips {
         Trips trips= tripsINputDto.transformIntoTrips();
         tripsRepository.save(trips);
         return new TripsOUTputDto(trips);
+    }
+
+    @Override
+    public Integer countPassengers(Integer id) {
+        Trips trips= tripsRepository.findById(id).orElseThrow(()-> {throw new EntityNotFoundException("The trips with Id: "+id+" does not exist in the database", HttpStatus.FOUND,new Date());});
+        return trips.getPassenger().size();
+    }
+
+    @Override
+    public TripsOUTputDto addPassenger(Integer id, Integer client_id) {
+        Trips trips = tripsRepository.findById(id).orElseThrow(()-> {
+            throw new EntityNotFoundException("The trips with Id: "+id+" does not exist in the database", HttpStatus.FOUND,new Date());});
+
+        if(trips.getPassenger().size() == 40)
+            throw new UnprocessableEntityException("The trip has the maximum number of passengers",HttpStatus.UNPROCESSABLE_ENTITY,new Date());
+
+        if(trips.getPassenger().stream().filter(c->c.getId_cliente()==client_id).toList().size()==1)
+            throw new UnprocessableEntityException("The passenger is already registered for that trip",HttpStatus.UNPROCESSABLE_ENTITY,new Date());
+
+        Cliente cliente= clienteRepository.findById(client_id).orElseThrow(()-> new EntityNotFoundException("The trips with Id: " + id + " does not exist in the database", HttpStatus.FOUND, new Date()));
+        trips.getPassenger().add(cliente);
+        tripsRepository.save(trips);
+
+        return new TripsOUTputDto(tripsRepository.save(trips));
+    }
+    @Override
+    public TripsOUTputDto changeStatus(Integer id_trips, String status) {
+        Trips trips= tripsRepository.findById(id_trips).orElseThrow(()-> {
+            throw new EntityNotFoundException("The trips with Id: "+id_trips+" does not exist in the database", HttpStatus.FOUND,new Date());});
+        return new TripsOUTputDto( tripsRepository.save(trips));
     }
 
 }
