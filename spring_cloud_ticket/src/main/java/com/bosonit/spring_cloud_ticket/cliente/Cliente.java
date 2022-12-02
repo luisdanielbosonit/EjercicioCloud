@@ -1,5 +1,6 @@
 package com.bosonit.spring_cloud_ticket.cliente;
 
+import com.bosonit.spring_cloud_ticket.cliente.infrastructue.ClienteOUTputDto;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

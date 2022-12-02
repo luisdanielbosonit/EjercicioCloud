@@ -18,9 +18,9 @@ public interface ServiceTicket {
 
     public void deleteTicket(Integer id) throws Exception; //ok
 
-    public List<TicketOUTputDto> viewallTicket();
+    public List<TicketOUTputDto> viewallTicket();//ok
 
-    public Object loadTicket(Integer id)throws Exception; //ok
+    public Object TicketCliente(Integer id)throws Exception; //ok
 
     public TicketOUTputDto addTicket(TicketINputDto ticketINputDto)throws Exception; //ok
 

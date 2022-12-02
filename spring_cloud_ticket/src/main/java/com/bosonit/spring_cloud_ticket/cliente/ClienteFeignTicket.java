@@ -1,5 +1,6 @@
 package com.bosonit.spring_cloud_ticket.cliente;
 
+import com.bosonit.spring_cloud_ticket.cliente.infrastructue.ClienteOUTputDto;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

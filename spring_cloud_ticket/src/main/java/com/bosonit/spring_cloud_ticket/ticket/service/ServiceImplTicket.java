@@ -86,16 +86,16 @@ public class ServiceImplTicket implements ServiceTicket {
     }
 
     @Override
-    public Object loadTicket(Integer id){
-        return clienteFeignTicket.findByIdCliente(id);  //prueba para comprobar que funciones el feign
-
+    public Object TicketCliente(Integer id) throws Exception{
+//        Ticket ticket= ticketINputDto.transformIntoTicket();
+//        ticketRepository.save(ticket);
+//        ClienteOUTputDto clienteOUTputDto= clienteFeignTicket.findByIdCliente(id);
+        return clienteFeignTicket.findByIdCliente(id);
     }
 
     @Override
     public TicketOUTputDto addTicket(TicketINputDto ticketINputDto) throws Exception {
-        Ticket ticket= ticketINputDto.transformIntoTicket();
-        ticketRepository.save(ticket);
-        return new TicketOUTputDto(ticket);
+        return null;
     }
 
 

@@ -1,7 +1,7 @@
 package com.bosonit.spring_cloud_ticket.ticket.infrastructure.controller;
 
 
-import com.bosonit.spring_cloud_ticket.cliente.ClienteOUTputDto;
+import com.bosonit.spring_cloud_ticket.cliente.infrastructue.ClienteOUTputDto;
 import com.bosonit.spring_cloud_ticket.ticket.infrastructure.dtos.TicketINputDto;
 import com.bosonit.spring_cloud_ticket.ticket.infrastructure.dtos.TicketOUTputDto;
 import com.bosonit.spring_cloud_ticket.ticket.service.ServiceTicket;
@@ -22,8 +22,10 @@ public class TicketController {
 
     @PostMapping("/addticket/{id_cliente}/{id_trips}")
     public Object guardarticket(@PathVariable Integer id_cliente, @PathVariable Integer id_trips) throws Exception {
-        return serviceTicket.loadTicket(id_cliente);
+        return serviceTicket.TicketCliente(id_cliente);
     }
+
+
 
 //    @PostMapping("addticket/{id_cliente}/{id_trips}")
 //    public ResponseEntity<ClienteOUTputDto> saveCliente(@PathVariable Integer id_cliente, @RequestBody ClienteOUTputDto clienteOUTputDto ){
@@ -59,7 +61,7 @@ public class TicketController {
 
     @GetMapping("cliente/get/{id}")
     public ResponseEntity<ClienteOUTputDto> getClieById(@PathVariable Integer id) throws Exception {
-        ClienteOUTputDto clienteOUTputDto= (ClienteOUTputDto) serviceTicket.loadTicket(id);
+        ClienteOUTputDto clienteOUTputDto= (ClienteOUTputDto) serviceTicket.TicketCliente(id);
         return ResponseEntity.ok(clienteOUTputDto);
     }
 }
