@@ -6,6 +6,7 @@
         <option value="$PROJECT_DIR$/eureka/pom.xml" />
         <option value="$PROJECT_DIR$/spring_cloud/pom.xml" />
         <option value="$PROJECT_DIR$/spring_cloud_ticket/pom.xml" />
+        <option value="$PROJECT_DIR$/gateway/pom.xml" />
       </list>
     </option>
   </component>

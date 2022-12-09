@@ -1,0 +1,13 @@
+
+o
+java:S1192-"TDefine a constant instead of duplicating this literal "The trips with Id: " 6 times.(ì»ìžûÿÿÿÿ
+{
+java:S1192$"`Define a constant instead of duplicating this literal " does not exist in the database" 7 times.(Ò€Ô­ýÿÿÿÿ
+f	java:S117h"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ö¾‘„
+f	java:S117y"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ù¶’¯
+R
+java:S4973o"<Strings and Boxed types should be compared using "equals()".(õÚÏô
+V	java:S1259"<This block of commented-out lines of code should be removed.(™æíˆøÿÿÿÿ
+V	java:S125D"<This block of commented-out lines of code should be removed.(ªÛªàúÿÿÿÿ
+W
+java:S1612V"<Replace this lambda with method reference 'listatrips::add'.(àßÞ®øÿÿÿÿ

@@ -1,0 +1,9 @@
+
+h	java:S116"SRename this field "id_trips" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™’¯
+Q	java:S125"<This block of commented-out lines of code should be removed.(ùìë¬
+V	java:S125"<This block of commented-out lines of code should be removed.(İ—áıÿÿÿÿ
+Q	java:S125."<This block of commented-out lines of code should be removed.(¦¦×¯
+b
+java:S1128"LRemove this unused import 'com.bosonit.spring_cloud.cliente.entity.Cliente'.(áç‚Ä
+F
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ

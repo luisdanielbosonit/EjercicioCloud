@@ -4,32 +4,196 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="adbaff7e-2809-4fdd-bc86-89acbdc065c9" name="Changes" comment="eureka">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring_cloud_ticket/src/main/java/com/bosonit/spring_cloud_ticket/cliente/ServiceCliente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring_cloud_ticket/src/main/java/com/bosonit/spring_cloud_ticket/cliente/infrastructue/ClienteController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring_cloud_ticket/src/main/java/com/bosonit/spring_cloud_ticket/cliente/infrastructue/ClienteINputDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring_cloud_ticket/src/main/java/com/bosonit/spring_cloud_ticket/trips/Trips.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_actuator_2_7_7_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_actuator_2_7_7_SNAPSHOT.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_actuator_autoconfigure_2_7_7_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_actuator_autoconfigure_2_7_7_SNAPSHOT.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_actuator_2_7_7_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_actuator_2_7_7_SNAPSHOT.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_freemarker_2_7_7_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_freemarker_2_7_7_SNAPSHOT.xml" afterDir="false" />
+    <list default="true" id="adbaff7e-2809-4fdd-bc86-89acbdc065c9" name="Changes" comment="GateWay">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_autoscaling_1_11_277.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_core_1_11_277.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_ec2_1_11_277.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_route53_1_11_277.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_sts_1_11_277.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_jmespath_java_1_11_277.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_dataformat_jackson_dataformat_cbor_2_13_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_andrewoma_dexx_dexx_collections_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_vlsi_compactmap_compactmap_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_16_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_archaius_archaius_core_0_7_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_buffer_4_1_85_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_4_1_85_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_dns_4_1_85_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_http2_4_1_85_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_http_4_1_85_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_socks_4_1_85_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_common_4_1_85_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_4_1_85_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_proxy_4_1_85_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_4_1_85_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_dns_4_1_85_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_dns_classes_macos_4_1_85_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_dns_native_macos_osx_x86_64_4_1_85_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_4_1_85_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_classes_epoll_4_1_85_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_epoll_linux_x86_64_4_1_85_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_unix_common_4_1_85_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_projectreactor_netty_reactor_netty_core_1_0_25.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_projectreactor_netty_reactor_netty_http_1_0_25.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_projectreactor_reactor_test_3_4_25.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_validation_jakarta_validation_api_2_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_servlet_api_2_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__joda_time_joda_time_2_8_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_2_5_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_reactor_netty_2_7_7_SNAPSHOT.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_validation_2_7_7_SNAPSHOT.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_webflux_2_7_7_SNAPSHOT.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_gateway_server_3_1_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_gateway_3_1_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_eureka_client_3_1_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webflux_5_3_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__software_amazon_ion_ion_java_1_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/0/00ef8234041ac32c96aa6069ff7587f6f06cff08" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/2/024a96d3ece3393d5ab09596e9f4f210fd219046" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/2/02d343b9b5c40c9dc7299e4cf12f13714aa26b77" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/3/036ec08bc1dd7e53c8e189834a2e8fcd89ba37a2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/4/04ae50773cba94bb836b1b6d2f33b92de6b92637" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/8/084bd632ab329c141a90c89c566cfddc1cfd22c8" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/0/1076c8d90fdec74a3494ab14464a2598dcb8ad42" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/3/13665ee75439af61b51218041a7d9676118009ef" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/3/13ba358d310acda97b926f9e04fbf4fbe6d9432b" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/5/15c50f4cd4153b4e2a17f66825cf042127a58d1a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/8/188a324fddeba1306176fc6e68ffeea4cba00709" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/9/19353f62b8eb3aa1f1aca4ce1490b668ba6c54b3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/9/19658dbab33829b01b9f717c8cd7d4665dc513da" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/c/1cc34ce79c2e7b526564d4b93baf43ed7f848a67" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/d/1d1fbd6490a6e025acee96d3f193ef8bacd65b43" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/5/25d9f8292644c7166c2a95ffeb2c5f081be03113" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/8/28add3d17df75cefbfe3cdbad9c90e1e860567f2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/9/29d7ff06c2ef4ab9ea0cc19ffe8720c03141b912" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/b/2b9a0564498968d8dd08b9aa7b38fa8daa0c603f" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/c/2c6891512c0768f0ac268929ca1041d785d390e0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/e/2e10beb5e9c48b1f4725f269d575ac72d5f43a45" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/1/314a36e6a8fcf217522b9f1e28a584bd95aa1383" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/7/3752d98ab5d86496f417709933a518c0e8260a4c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/7/375330e16ca4d03182638b8f50415d28a7c5f945" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/7/3753dd4e22974a6308070e54fee9a36a92530b6b" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/a/3a1414528e50588dcb0ac44205385618489e8d6d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/a/3a77908e815ec75d6967a4cbba5210398083f667" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/b/3b41c3152ae41b32251285923eb1802792ee69cf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/b/3b9b83fa9ff8a643289478b9a629a07cb1d1be54" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/1/4107cfcb5e5028f7e59f6f0162f8667ac912140d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/6/469980803e92553fcf26e1350f08934a85763a33" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/6/46a4c145890fbf18063724b69742c73eab8fc111" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/8/480bf7dcc48e19ce4663f6c4079b263a9d3ced48" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/b/4b21e27bebe6a6d371a3e514ba7cb64a09862fe8" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/1/51870f07b4e63c9256ecf7e6f92445305e18613f" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/3/5351f3da3adde668cc0fe612398279ad4758ccc0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/4/54d49c19c9a2fc574a0026c1f132c9dca3379b7e" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/5/55596050b097fc548e4e2c8bac422b30b68736a0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/7/57a90528b9de166dc90ce2118ae82607e713d1f8" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/a/5ad75d818a9c27f131a65a5341e704ba4d3e74e3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/a/5af894124e208e0bc7a99a4e20a1c76481126c83" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/b/5b67992dbc326b00e8b3c16de984fa307fa7bd5a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/f/5fbe0020a09bbbf977802456f8263b7cc4dca685" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/0/60b31cb975507b4013efac3e7362abb83c995a70" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/7/67118768c73e817cf38a50909cc27ee3d203bb3d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/c/6c86fe12e1e8bbf533efc80890de45f7d9293296" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/e/6e755f0b7224f262e1f30d927b64aa06ca35423d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/f/6fed3ee3d4c8f4c616626245af20c4efd37f6bdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/4/74dcdf6a2f051a241bb884b861515d084c1614aa" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/7/7746438ec20718265a9708e83196ce5e078aa5c8" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/9/796279072b6a90495b362b1fb3e38d006a0d9e4f" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/9/798107a25e13f7cd362ff4017b9b639db3f4a9f0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/a/7a8e297d4ebcfec47a13eefd9527ef7c59a69257" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/0/809fde1bf498921c92afa879578a3551b84f46b3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/1/819ffa7bac9f7d0e9f2fef228ce3b5135e130b11" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/1/81d5752a6283191b5910170b32ae0893d73f6e53" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/9/890c2fd399d8d450631569311afd4454057299c2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/9/894ac2374a95c792e65e0f85589a1150a83532c0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/a/8a366680aa0bd4f8a8ebbc2adf36c3da87bd5622" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/d/8d640e9f7673a5f185908b583182969d73b39db6" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/d/8ddc74c8d678657ffd439cd2e0b6ab83756b44bf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/0/9003df5a17c86c9098a716da9b41f7acdf5a1e61" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/0/9056ceeaa69fb97051a2a592f77810f83427b096" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/6/9681d8fd9c780f673165f6c2fd19c44ed92b89b9" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/8/9820e255363a8ed216da64c6f0c38a465a2d02e5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/8/98acd9f658cfbc63d91aa9ade7b937d05ed66db0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/9/99700392b9154b1c3115cbc2b4892c5d04a78030" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/a/9a9df37a2df096e9c1c7c83ddb566a167495609b" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/d/9d309c0e2031346738385b0e0d87478993730480" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/1/a10ebadf0beb50faf85d495c771d600ce46fcf08" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/1/a1486845d164ec6a8f13a58aa8cb91cdd97c5d37" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/1/a17948be64982080953ed412ac73d2d42d2e8cf8" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/5/a5ae2a91764222a0271171e25efa9e4f8fa75a83" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/7/a78f4372573f8ea41da1773d526d214e8b094e9e" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/9/a92b3e32da2a4a83800ae175b8fdd165b8135c6f" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/9/a9bc53c9ae8caf12212c4e150210d607c6aadb97" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/a/aac0be4ac7d81e1b23f410289fecdbc4d58c329c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/c/acb5c83572c338d77f1bc1381c71873ec5e8bb5f" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/f/afc0fe3f30001e5b4015f00371f3992cd34cb96b" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/5/b59a3fed3222d3414cd932d1d900c58c19d5c290" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/5/b5d1b79f61ba078cc06de4d473e88a8df5727958" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/7/b757c0cc3e520d51211fc8f76e82ee939aa72e61" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/a/ba27785b201fa19508d8b0a2d561319dfecea377" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/b/bb23b44a3a7c8837b4068362b462df5ee5281266" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/b/bb3c1c44f234d0bfddce47afdec0c5694fcd0a8e" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/c/bc038d1b029a5c862f951be4bde4b658f72346c1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/d/bd490b68048358bced7dd4721c6b0ccc31a2c897" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/0/c027f803c52249423dab0b8b1d50bd88b6563b29" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/1/c1d4aebf68732f20d03dfde08e352f60e0421b78" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/7/c7b561982d88c92a1f7ff42dc6213fa3e033dd89" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/e/cee4168f15b4179cc6d334f935b911d6b2150aaf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/f/cf9f586afc3047711f275a968bb30afa85f2d634" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/3/d3cef71277fc949d6bbdbbd6a4dc62d4bf0d141e" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/8/d8e6c6f7f7b180a346be25917dd5e7ce278f5d9f" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/9/d94e2cd0850ddca6d7394cb2230864d6b553ec28" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/9/d99d4ea48d10aecda0ea21f93accb09c4fa61e0b" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/a/da151d77d78d9ef16f8f3142c136fa2fff48195a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/f/df516b46a64b5d96f9a08820ef6920ba3b19655b" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/f/df61a35016626dedeef0c801463d73257367ebfa" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/1/e1fd5ab580f1ce85c71f86212edd228590441006" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/2/e2588c8dc53164acb2cec56411d91b2686147df5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/7/e7efcad9f3b640045b91b288723abee0f5fabfa0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/8/e8a659b283574b0fc4bd8a8eaac0194e826f7894" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/8/e8f0bb6313867eeba6d001451198656ecf9517c7" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/a/ea66b1928bff0b2fe385d4cc9e3af63c81653b32" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/c/ec349ab72584104b911779698d812ff7fa00ad9c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/e/ee5e32588e5a0672f27f4f7062851bd391c23ef0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/f/ef13df2904c1454fdef936197b323ea85e3d0fb4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/f/efeba6ad3e3f8ada8535bd1dab7b473e12eaddc8" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/1/f129e6fe924573838e44adb121b1b0da9026fa6a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/1/f1e65a713ac64973d34a691bc1b98e8719f70fdc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/3/f37a4d6cc211fe03a79b3c8a510e4b507fcf1f66" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/5/f5359bad1d418868e9564c824d5050e8ccb7b9bd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/b/fb570340728e6da7db0efbf01a794639dc366102" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/c/fc6a604cbad9c49b4ba1614c51dce3cc474e53be" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/bosonit/gateway/GatewayApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/bosonit/gateway/gatewayRouting.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/test/java/com/bosonit/gateway/GatewayApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_cloud_ticket/src/main/java/com/bosonit/spring_cloud_ticket/trips/ServiceTrips.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_cloud_ticket/src/main/java/com/bosonit/spring_cloud_ticket/trips/TripsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_cloud_ticket/src/main/java/com/bosonit/spring_cloud_ticket/trips/TripsINputDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_cloud_ticket/src/main/java/com/bosonit/spring_cloud_ticket/trips/TripsOUTputDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_7_7_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_7_7_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_7_7_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_7_7_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_devtools_2_7_7_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_devtools_2_7_7_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_7_7_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_7_7_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_7_7_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_7_7_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_7_7_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_7_7_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_7_7_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_7_7_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_7_7_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_7_7_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_7_7_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_7_7_SNAPSHOT.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/eureka/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring_cloud/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring_cloud/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring_cloud/src/main/java/com/bosonit/spring_cloud/SpringCloudApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring_cloud/src/main/java/com/bosonit/spring_cloud/SpringCloudApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring_cloud/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring_cloud/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring_cloud_ticket/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring_cloud_ticket/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring_cloud_ticket/src/main/java/com/bosonit/spring_cloud_ticket/SpringCloudTicketApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring_cloud_ticket/src/main/java/com/bosonit/spring_cloud_ticket/SpringCloudTicketApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring_cloud_ticket/src/main/java/com/bosonit/spring_cloud_ticket/cliente/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring_cloud_ticket/src/main/java/com/bosonit/spring_cloud_ticket/cliente/Cliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring_cloud_ticket/src/main/java/com/bosonit/spring_cloud_ticket/cliente/ClienteFeignTicket.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring_cloud_ticket/src/main/java/com/bosonit/spring_cloud_ticket/cliente/ClienteFeignTicket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring_cloud_ticket/src/main/java/com/bosonit/spring_cloud_ticket/cliente/ClienteOUTputDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring_cloud_ticket/src/main/java/com/bosonit/spring_cloud_ticket/cliente/infrastructue/ClienteOUTputDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring_cloud_ticket/src/main/java/com/bosonit/spring_cloud_ticket/ticket/feignticket/TripsFeignTicket.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring_cloud_ticket/src/main/java/com/bosonit/spring_cloud_ticket/trips/TripsFeignTrips.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring_cloud_ticket/src/main/java/com/bosonit/spring_cloud_ticket/ticket/infrastructure/controller/TicketController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring_cloud_ticket/src/main/java/com/bosonit/spring_cloud_ticket/ticket/infrastructure/controller/TicketController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring_cloud_ticket/src/main/java/com/bosonit/spring_cloud_ticket/ticket/service/ServiceImplTicket.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring_cloud_ticket/src/main/java/com/bosonit/spring_cloud_ticket/ticket/service/ServiceImplTicket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring_cloud_ticket/src/main/java/com/bosonit/spring_cloud_ticket/ticket/service/ServiceTicket.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring_cloud_ticket/src/main/java/com/bosonit/spring_cloud_ticket/ticket/service/ServiceTicket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring_cloud_ticket/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring_cloud_ticket/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +231,10 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/luisdaniel.acosta/IdeaProjects/EjercicioCloud/spring_cloud_ticket/src/main/java/com/bosonit/spring_cloud_ticket/trips&quot;
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/luisdaniel.acosta/IdeaProjects/Ejercicio5.6&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -78,7 +245,7 @@
       <recent name="com.bosonit.spring_cloud_ticket.cliente" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SpringCloudTicketApplication">
+  <component name="RunManager" selected="Application.GatewayApplication">
     <configuration name="EurekaApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.bosonit.eureka.EurekaApplication" />
       <module name="eureka" />
@@ -92,12 +259,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GatewayApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <envs>
+        <env name="server.port" value="8090" />
+      </envs>
+      <option name="MAIN_CLASS_NAME" value="com.bosonit.gateway.GatewayApplication" />
+      <module name="gateway" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bosonit.gateway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SpringCloudApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <envs>
         <env name="server.port" value="8088" />
       </envs>
       <option name="MAIN_CLASS_NAME" value="com.bosonit.spring_cloud.SpringCloudApplication" />
-      <module name="spring_cloud" />
+      <module name="backend" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.bosonit.spring_cloud.*" />
@@ -113,7 +296,7 @@
         <env name="server.port" value="8089" />
       </envs>
       <option name="MAIN_CLASS_NAME" value="com.bosonit.spring_cloud_ticket.SpringCloudTicketApplication" />
-      <module name="spring_cloud_ticket" />
+      <module name="back_front" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.bosonit.spring_cloud_ticket.*" />
@@ -125,14 +308,16 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.GatewayApplication" />
       <item itemvalue="Application.EurekaApplication" />
       <item itemvalue="Application.SpringCloudTicketApplication" />
       <item itemvalue="Application.SpringCloudApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SpringCloudTicketApplication" />
+        <item itemvalue="Application.GatewayApplication" />
         <item itemvalue="Application.SpringCloudApplication" />
+        <item itemvalue="Application.SpringCloudTicketApplication" />
         <item itemvalue="Application.EurekaApplication" />
       </list>
     </recent_temporary>
@@ -153,7 +338,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669973786491</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="eureka">
+      <created>1669988245406</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1669988245406</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -170,6 +362,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feign" />
     <MESSAGE value="eureka" />
-    <option name="LAST_COMMIT_MESSAGE" value="eureka" />
+    <MESSAGE value="GateWay" />
+    <option name="LAST_COMMIT_MESSAGE" value="GateWay" />
   </component>
 </project>
